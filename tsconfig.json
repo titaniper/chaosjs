@@ -3,7 +3,7 @@
     "baseUrl": "./src", // 모듈의 기본 경로를 설정합니다. 상대 경로 모듈 가져오기 시의 기준 경로입니다.
     "outDir": "./dist", // 컴파일된 파일들이 저장될 출력 디렉토리입니다.
     "esModuleInterop": true,  // CommonJS와 ES 모듈 간의 호환성을 지원합니다 (import/export 구문 사용 시 호환성 제공).
-    "target": "ES2019", // JavaScript의 버전 목표를 설정합니다. ES2019는 ECMAScript 2019 표준을 목표로 합니다.
+    "target": "ES2022", // JavaScript의 버전 목표를 설정합니다. ES2019는 ECMAScript 2019 표준을 목표로 합니다.
     "module": "CommonJS",  // 모듈 시스템을 CommonJS로 설정합니다. 이는 Node.js에서 사용되는 모듈 시스템입니다.
     "declaration": true,   // 타입 정의 파일(.d.ts)을 생성합니다. 이 파일은 TypeScript 타입 정보를 포함합니다.
     "forceConsistentCasingInFileNames": true, // 파일 및 디렉토리 이름의 대소문자 일관성을 강제합니다. 운영 체제에 따라 다른 파일명 대소문자 인식 문제를 방지합니다.
