@@ -1,12 +1,12 @@
 {
   "name": "@jykang/chaosjs",
   "version": "1.0.7",
-  "main": "dist/index.cjs.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "vite build",
-    "start": "node dist/index.cjs.js",
+    "start": "node dist/index.cjs",
     "dev": "ts-node src/index.ts",
     "test": "jest"
   },
@@ -27,6 +27,6 @@
   "type": "commonjs", 
   "exports": {
     "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs.js"
+    "require": "./dist/index.cjs"
   }
 }

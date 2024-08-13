@@ -5,6 +5,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "dev": "ts-node src/index.ts",
     "test": "jest"
   },
   "devDependencies": {
@@ -15,7 +16,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@jykang/chaosjs": "1.0.6",
+    "@jykang/chaosjs": "1.0.7",
     "@jykang/eslint-config": "^1.0.1",
     "ts-node": "^10.9.2"
   }
