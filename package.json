@@ -1,13 +1,13 @@
 {
   "name": "@jykang/chaosjs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js", 
+  "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "vite build", 
+    "build": "vite build",
     "start": "node dist/index.cjs.js",
-    "dev": "ts-node src/index.ts",  
+    "dev": "ts-node src/index.ts",
     "test": "jest"
   },
   "license": "MIT",
@@ -18,14 +18,15 @@
   },
   "devDependencies": {
     "@types/node": "^22.2.0",
-    "vite": "^4.0.0"
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^4.0.2"
   },
   "publishConfig": {
-    "access": "public"  
+    "access": "public"
   },
   "type": "module",
   "exports": {
-    "import": "./dist/index.es.js", 
+    "import": "./dist/index.es.js",
     "require": "./dist/index.cjs.js"
   }
 }
