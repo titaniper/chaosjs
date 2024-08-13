@@ -1,8 +1,8 @@
 let count = 0;
 
-function request() {
+function request(options?: { limit: number }) {
     count++;
-    if (count > 70) {
+    if (count > (options?.limit ?? 70)) {
         console.log('Chaos Engine activated! Shutting down the application.');
         process.kill(process.pid, 'SIGINT');
     }
