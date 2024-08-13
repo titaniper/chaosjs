@@ -5,9 +5,9 @@ import path from 'path';
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      formats: ['es', 'cjs'],
-      fileName: (format) => `index.${format}.js`,
+        entry: path.resolve(__dirname, 'src/index.ts'),
+        formats: ['es', 'cjs'],
+        fileName: (format) => format === 'cjs' ? `index.cjs` : `index.mjs`,
     },
     rollupOptions: {
       external: [], // 외부 종속성을 설정 (필요에 따라 추가)
