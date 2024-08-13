@@ -1,14 +1,19 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist",
     "esModuleInterop": true,
+    "target": "ES2019",
+    "module": "CommonJS",  // CommonJS 모듈 시스템으로 컴파일
+    "declaration": true,  // 타입 정의 파일(.d.ts) 생성
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "moduleResolution": "node",
     "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "noEmit": true,
-    "strict": true,
-    "lib": ["es2016", "DOM"]
+    // "noEmit": true, // 이거 키면 컴파일 안됨
+    "strict": true
   },
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }

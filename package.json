@@ -1,7 +1,14 @@
 {
   "name": "@jykang/chaosjs",
-  "version": "1.0.1",
-  "main": "src/index.ts",
+  "version": "1.0.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest"
+  },
   "license": "MIT",
   "private": false,
   "repository": "https://github.com/titaniper/chaosjs",
